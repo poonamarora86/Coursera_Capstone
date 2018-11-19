@@ -9,6 +9,9 @@ This project attempts to help you with identifying the areas of houses according
 
 For example, one might want to look at all areas which has proximity to pubs, cafes, public transport etc. This project attempts cluster areas based on your provided preferences/categories. We then print those clusters on the map to distinguish between areas. That should make it easy to choose a certain areas to look for and narrow down your search.
 
+**Stakeholders**: People who are looking to switch house in London in general. 
+
+
 ### Data
 
 I plan to use two datasets:
@@ -24,3 +27,4 @@ Lewisham council postcodes data has many columns but out of those only Postcode,
   2. Foursquare venues data with categories
 
 
+**Assumptions**: Data is downloaded from Doogle and it comprises of postcodes in Lewisham council In London, UK. Assuming that this data is limited and doesn't represent actual availability of the house. But that should be easy as we could just focus on the area here. I am going to focus on only Forest Hill part of the Lewisham as FourSquare api has aggressive rate limit for explore api of 500 calls/day.
