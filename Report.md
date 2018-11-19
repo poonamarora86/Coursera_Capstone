@@ -17,7 +17,7 @@ For example, one might want to look at all areas which has proximity to pubs, ca
 
 I plan to use two datasets:
 
-  1. London Lewisham council postcodes data - we narrow down to lewisham, forest hill to minimize the calls to FS apis. This dataset contains all postcodes present in the lewisham council in London. Example data look like:
+  1. London Lewisham council postcodes data downloaded from [Doogle](https://www.doogal.co.uk/AdministrativeAreasCSV.ashx?district=E09000023): We narrow down to lewisham council (and mainly focus on forest hill ward) to minimize the calls to FS apis. This dataset contains all postcodes present in the lewisham council in London. Example data look like:
 
 ```
 Postcode	In Use?	Latitude	Longitude	Easting	Northing	Grid Ref	Ward	Parish	Introduced	Terminated	Altitude	Country	Last Updated	Quality
