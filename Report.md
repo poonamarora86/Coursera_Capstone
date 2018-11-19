@@ -10,7 +10,7 @@ For example, one might want to look at all areas which has proximity to pubs, ca
 
 **Stakeholders/Target Audience**: People who are looking to find house in London, especially the people who are starting their house search and has a certain prefrences in the mind.
 
- Note that this project attempts to solve the first step of your house search, not everything.
+Note that this project attempts to solve the first step of your house search only, not everything. Websites mentioned above are still relevant and should be seen as complimentary to this project.
 
 
 ### Data
@@ -23,7 +23,7 @@ I plan to use two datasets:
 Postcode	In Use?	Latitude	Longitude	Easting	Northing	Grid Ref	Ward	Parish	Introduced	Terminated	Altitude	Country	Last Updated	Quality
 BR1 4BY	Yes	51.417289	-0.001741	539050	170591	TQ390705	Downham	Lewisham, unparished area	1980-01-01		35	England	2018-11-15	Within the building of the matched address closest to the postcode mean
   ```
-Lewisham council postcodes data has many columns but out of those only Postcode, Longitude, Latitude and Ward of the postcode are of out interest. We can then use these postcodes to look up in the FourSquare API to get results about categories which are in the proximity. We then use that data to create and analyse clusters of areas.
+Lewisham council postcodes data has many columns but out of those only Postcode, Longitude, Latitude and Ward of the postcode are of our interest. We can then use these postcodes to look up in the FourSquare API to get results about categories which are in the proximity. We then use that data to create and analyse clusters of areas.
 
   2. Foursquare venues data with categories
 
