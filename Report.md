@@ -1,4 +1,4 @@
-### Capstote week 4 Report
+### Capstote week 4
 
 
 ### Introduction/Business Problem
