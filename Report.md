@@ -3,13 +3,13 @@
 
 ### Introduction/Business Problem
 
-Its very challenging to find a house in London, UK. There are many websites out there that try to help you out with searching your house. But even then which area to look for is a manual task that these websites do not automate.
+Its very challenging to find a house in London, UK. There are many websites out there that try to help you out with searching your house like zoopla, rightmove. But even then narrowing down area to look for is a manual task that these websites do not automate/provide.
 
-This project attempts to help you with identifying the areas of houses according to your prefernces about the neighbourhood. 
+This project attempts to help you with identifying or narrowing down the areas of houses according to your prefernces about the neighbourhood.
 
 For example, one might want to look at all areas which has proximity to pubs, cafes, public transport etc. This project attempts cluster areas based on your provided preferences/categories. We then print those clusters on the map to distinguish between areas. That should make it easy to choose a certain areas to look for and narrow down your search.
 
-**Stakeholders**: People who are looking to switch house in London in general. 
+**Stakeholders/Target Audience**: People who are looking to switch house in London in general. 
 
 
 ### Data
