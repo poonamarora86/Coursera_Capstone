@@ -62,7 +62,7 @@ I obtained 5 clusters from K means clustering executed in the previous step whic
 * Cluster 3. It contains houses with proximity to Japenese restaurant, Grocery Stores, Mobile shopts etc.
 * Cluster 4. Is suitable for those who like greenary, nearby forest, parks etc.
 
-### Conclusion
+### Conclusion
 
 The above clusters segment the data into 5 homogeneous groups which exhibit similarities among themselves in terms of venue categories ane being heterogenous from the other groups. For example, If an individual is interested in staying near to places with proximity to pubs and cafes, Cluster1 is a great choice or if greenry, forest and parks are of interest to someone, sectors under cluster 5 are the most suitable. 
 
