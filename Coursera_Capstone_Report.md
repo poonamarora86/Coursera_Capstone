@@ -35,9 +35,11 @@ This section is divided into three main parts, data wrangling/Cleansing, Explora
 
   * **Data Wrangling/ Cleansing**: Data obtained from [Doogle](https://www.doogal.co.uk/AdministrativeAreasCSV.ashx?district=E09000023) for Lewisham coucil has many columns but I concentrated on few columns only (Postcode, Latitude, Longitude and Ward). Also to obtain uniqueness on the different location, I explored the postcodes and learned that every postcode in Lewisham is divided into two major parts, District and Sector. I created a new column which contain Sectors and added the new column to the cleansed data. Also, I filtered the data for Forest Hill ward to minimize the calls to Four square API.
 
-  * **Exploratory Analysis**: Lewisham data has 18 unique wards and I filtered on a single ward as a point of interest namely Forest Hill. As explained in the cleansing step that postcode is comprised of two components, district and sector, I obtained 2 districts (SE23 and SE26) and 369 unique sectors from Forest Hill. I also plotted all the sectors on the map.
+  * **Exploratory Analysis**: Lewisham data has 18 unique wards and I filtered on a single ward as a point of interest namely Forest Hill. As explained in the cleansing step that postcode is comprised of two components, district and sector, I obtained 2 districts (SE23 and SE26) and 369 unique sectors from Forest Hill. I also plotted all the sectors on the map and then I created five different clusters based on the venue categories provided by Foursquare API data. I noticed that one of the clusters is giving imprecise points as shown in second map. 
   
   ![Sectors_FH](Sectors_FH.png)
+  
+  ![Clusters_FH](Clusters_FH.png)
 
   * **Machine Learning**: Since our objective is to ease the search for  people who have preferences in terms of nearby venues, I tried to explore all the sectors under Forest Hill ward using Four square API and obtained multiple venues names, their geographical coordinates and category for each sector within 500m radius and put a limit on the number of venues as 100 for each sector.
 
