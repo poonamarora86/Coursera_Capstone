@@ -2,7 +2,7 @@
 
 ### Introduction/ Business Problem
 
-Its very challenging to find a house in London, UK. There are many websites out there that try to help you out with searching your house like Zoopla, Rightmove. But even then narrowing down area to look for is a manual task that these websites do not automate/provide. Narrowing down area can be very tedious and time consuming process.
+It's very challenging to find a house in London, UK. There are many websites out there that try to help you out with searching your house like Zoopla, Rightmove. But even then narrowing down area to look for is a manual task that these websites do not automate/provide. Narrowing down area can be very tedious and time consuming process.
 
 This project attempts to help you with identifying or narrowing down the search for the house according to your preferences about the neighborhood. 
 For example, one might want to look at all areas which has proximity to pubs, cafes, public transport etc. This project attempts cluster areas based on your provided preferences/categories. We then print those clusters on the map to distinguish between areas. That should make it easy to choose a certain areas to look for and narrow down your search.
@@ -10,7 +10,7 @@ For example, one might want to look at all areas which has proximity to pubs, ca
 **Stakeholders/Target Audience**: People who are looking to find house in London, especially the people who are starting their house search and has certain preferences.
 Customers who are confused about the area they would like to live and want to know the trade-offs between different areas.
 
-Note: This project attempts to solve the first step of your house search only, not everything. Websites mentioned above are still relevant and should be seen as complimentary to this project.
+Note: This project attempts to solve the first step of your house search only, not everything. Websites mentioned above are still relevant and should be seen as complementary to this project.
 
 
 ### Data
@@ -34,7 +34,7 @@ b. The second dataset I used is Foursquare venues data with categories, this wil
 
 This section is divided into three main parts, data wrangling/Cleansing, Exploratory analysis and machine learning method used to solve the problem. 
 
-  * **Data Wrangling/ Cleansing**: Data obtained from [Doogle](https://www.doogal.co.uk/AdministrativeAreasCSV.ashx?district=E09000023) for Lewisham coucil has many columns but I concentrated on few columns only (Postcode, Latitude, Longitude and Ward). Also to obtain uniqueness on the different location, I explored the postcodes and learned that every postcode in Lewisham is divided into two major parts, District and Sector. I created a new column which contain Sectors and added the new column to the cleansed data. Also, I filtered the data for Forest Hill ward to minimize the calls to Four square API.
+  * **Data Wrangling/ Cleansing**: Data obtained from [Doogle](https://www.doogal.co.uk/AdministrativeAreasCSV.ashx?district=E09000023) for Lewisham council has many columns but I concentrated on few columns only (Postcode, Latitude, Longitude and Ward). Also to obtain uniqueness on the different location, I explored the postcodes and learned that every postcode in Lewisham is divided into two major parts, District and Sector. I created a new column which contain Sectors and added the new column to the cleansed data. Also, I filtered the data for Forest Hill ward to minimize the calls to Four square API.
 
   * **Exploratory Analysis**: Lewisham data has 18 unique wards and I filtered on a single ward as a point of interest namely Forest Hill. As explained in the cleansing step that postcode is comprised of two components, district and sector, I obtained 2 districts (SE23 and SE26) and 369 unique sectors from Forest Hill. I also plotted all the sectors on the map and then I created five different clusters based on the venue categories provided by Foursquare API data. I noticed that one of the clusters is giving imprecise points as shown in second map. I also explored top five venues in each sector.
   
@@ -47,7 +47,7 @@ This section is divided into three main parts, data wrangling/Cleansing, Explora
   From four square API, I obtained 46 different venue categories like Café, Pubs, Public transport, Park, Nature Reserve, Vintage stores etc.
 
   * **Machine Learning**: I decide to use K means Clustering for the problem because after the exploratory analysis it was obvious that we can categorise postcodes into different homogenous clusters based on the venue categories. 
-Further on, we need to create our dataset in a format where rows will represent the sectors and all columns will be venue categories and we will calculate the score for every category in each sector as per their presence or absence in the sector. We sort the catgories for each sector in order of their occurence, for example if a sector has more cafes and pubs, the sector will get higher score for the cafes and pubs and less for other categories. 
+Further on, we need to create our dataset in a format where rows will represent the sectors and all columns will be venue categories and we will calculate the score for every category in each sector as per their presence or absence in the sector. We sort the categories for each sector in order of their occurence, for example if a sector has more cafes and pubs, the sector will get higher score for the cafes and pubs and less for other categories. 
 The previous step will be sufficient to execute data mining technique I chose to accomplish this task(K mean clustering). K means clustering will segment the data into groups where groups are similar among themselves but different from other groups in terms of occurence of venue categories. For our dataset, K mean clustering will append another column to the dataset which will depict the cluster number, similar sectors will be grouped together. 
 
 
@@ -58,12 +58,12 @@ I obtained 5 clusters from K means clustering executed in the previous step whic
 * Cluster 0. Contains houses with proximity to Indian Restaurants, Bus Stops, Train stations etc.
 * Cluster 1. For youngsters - The cluster highlights all houses in the proximity to cafes, pubs and nightlife etc.
 * Cluster 2. It contains houses with proximity to Vintage stores, nature reserves etc.
-* Cluster 3. It contains houses with proximity to Japenese restaurant, Grocery Stores, Mobile shopts etc.
-* Cluster 4. Is suitable for those who like greenary, nearby forest, parks etc.
+* Cluster 3. It contains houses with proximity to Japanese restaurant, Grocery Stores, Mobile shops etc.
+* Cluster 4. Is suitable for those who like greenery, nearby forest, parks etc.
 
 The above clusters segment the data into 5 homogeneous groups which exhibit similarities among themselves in terms of venue categories are being heterogenous from the other groups. For example, If an individual is interested in staying near to places with proximity to pubs and cafes, Cluster1 is a great choice or if greenery, forest and parks are of interest to someone, sectors under cluster 5 are the most suitable. 
 
 
 ### Conclusion
  
-As demonstrated in the Result section, we can effectively simplify the house search process for our customers by clustering the area based on the venue categories and filtering the cluster to narrow down their search area. Customers can then prefer to focus their houe search by analysing various trade offs. Those who are confused can efficiently compare various areas and choose the one which is most suitable for them.
+As demonstrated in the Result section, we can effectively simplify the house search process for our customers by clustering the area based on the venue categories and filtering the cluster to narrow down their search area. Customers can then prefer to focus their house search by analysing various trade offs. Those who are confused can efficiently compare various areas and choose the one which is most suitable for them.
