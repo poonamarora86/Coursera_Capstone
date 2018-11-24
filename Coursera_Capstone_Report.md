@@ -37,7 +37,7 @@ This section is divided into three main parts, data wrangling/Cleansing, Explora
 
   * **Exploratory Analysis**: Lewisham data has 18 unique wards and I filtered on a single ward as a point of interest namely Forest Hill. As explained in the cleansing step that postcode is comprised of two components, district and sector, I obtained 2 districts (SE23 and SE26) and 369 unique sectors from Forest Hill. I also plotted all the sectors on the map.
   
-           ![Sectors_FH](Sectors_FH.png)
+  ![Sectors_FH](Sectors_FH.png)
 
   * **Machine Learning**: Since our objective is to ease the search for  people who have preferences in terms of nearby venues, I tried to explore all the sectors under Forest Hill ward using Four square API and obtained multiple venues names, their geographical coordinates and category for each sector within 500m radius and put a limit on the number of venues as 100 for each sector.
 
