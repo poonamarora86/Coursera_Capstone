@@ -8,6 +8,7 @@ This project attempts to help you with identifying or narrowing down the search 
 For example, one might want to look at all areas which has proximity to pubs, cafes, public transport etc. This project attempts cluster areas based on your provided preferences/categories. We then print those clusters on the map to distinguish between areas. That should make it easy to choose a certain areas to look for and narrow down your search.
 
 **Stakeholders/Target Audience**: People who are looking to find house in London, especially the people who are starting their house search and has certain preferences.
+Customers who are confused about the area they would like to live and want to know the trade-offs between different areas.
 
 Note: This project attempts to solve the first step of your house search only, not everything. Websites mentioned above are still relevant and should be seen as complimentary to this project.
 
@@ -65,4 +66,4 @@ The above clusters segment the data into 5 homogeneous groups which exhibit simi
 
 ### Conclusion
  
-As demonstrated in the Result section, we can effectively simplify the house search process for our customers by clustering the area based on the venue categories and filtering the cluster to narrow down their search area.
+As demonstrated in the Result section, we can effectively simplify the house search process for our customers by clustering the area based on the venue categories and filtering the cluster to narrow down their search area. Customers can then prefer to focus their houe search by analysing various trade offs. Those who are confused can efficiently compare various areas and choose the one which is most suitable for them.
