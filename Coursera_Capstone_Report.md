@@ -40,10 +40,12 @@ This section is divided into three main parts, data wrangling/Cleansing, Explora
   ![Sectors_FH](Sectors_FH.png)
   
   ![Clusters_FH](Clusters_FH.png)
+  
+  Since our objective is to ease the search for  people who have preferences in terms of nearby venues, I tried to explore all the sectors under Forest Hill ward using Four square API and obtained multiple venues names, their geographical coordinates and category for each sector within 500m radius and put a limit on the number of venues as 100 for each sector.
+  
+  From four square API, I obtained 46 different venue categories like Café, Pubs, Public transport, Park, Nature Reserve, Vintage stores etc.
 
-  * **Machine Learning**: Since our objective is to ease the search for  people who have preferences in terms of nearby venues, I tried to explore all the sectors under Forest Hill ward using Four square API and obtained multiple venues names, their geographical coordinates and category for each sector within 500m radius and put a limit on the number of venues as 100 for each sector.
-
-From four square API, I obtained 45 different venue categories like Café, Pubs, Public transport, Park, Nature Reserve, Vintage stores etc.
+  * **Machine Learning**: I decide to use K means Clustering for the problem because after the exploratory analysis it was obvious that we can categorise postcodes into different homogenous clusters based on the venue categories. 
 
 Further on, we need to create our dataset in a format where rows will represent the sectors and all columns will be venue categories and we will calculate the score for every category in each sector as per their presence or absence in the sector. We sort the catgories for each sector in order of their occurence, for example if a sector has more cafes and pubs, the sector will get higher score for the cafes and pubs and less for other categories. 
 
