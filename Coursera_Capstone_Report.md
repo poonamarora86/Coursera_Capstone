@@ -9,6 +9,9 @@ For example, one might want to look at all areas which has proximity to pubs, ca
 
 **Stakeholders/Target Audience**: People who are looking to find house in London, especially the people who are starting their house search and has certain preferences.
 
+Note: This project attempts to solve the first step of your house search only, not everything. Websites mentioned above are still relevant and should be seen as complimentary to this project.
+
+
 ### Data
 
 I used two datasets for the above problem:
@@ -60,4 +63,3 @@ The above clusters segment the data into 5 homogeneous groups which exhibit simi
 This will not only reduce an indiviual effort to go through all locations but also narrow down their search by giving them the liberty and choice to stay in their desired area. 
 
 
-*Note :- This project attempts to solve the first step of your house search only, not everything. Websites mentioned above are still relevant and should be seen as complimentary to this project.
